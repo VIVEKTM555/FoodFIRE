@@ -1,0 +1,509 @@
+/* Select all CSS */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: auto;
+  background-color: rgb(1, 163, 144);
+  border-radius: 5px;
+  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-weight: bold;
+}
+
+.logo {
+  padding-left: 10px;
+  width: 100px;
+}
+
+.nav-items {
+  padding: 0 10px 0;
+  width: auto;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 40px 10px 0 0;
+  font-size: large;
+  cursor: pointer;
+}
+
+/* Body CSS */
+.search-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+.search-container .search-input {
+  width: 40%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 15px 14px 20px;
+  border: 1px solid #aabcca;
+  border-right: 0;
+  color: #000000;
+  outline: none;
+}
+
+.search-container .search-btn {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #0768b3;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  padding: 15px 22px;
+  margin-left: -4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.search-container .search-btn:hover {
+  background-color: #016034;
+}
+
+.restaurant-list {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card > span {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card > span > h4 {
+  font-size: medium;
+}
+
+.card > span > h4:first-child {
+  display: flex;
+  align-items: center;
+  background-color: rgb(19, 176, 1);
+  border-radius: 5px;
+  padding: 0 5px 0;
+  color: white;
+}
+
+.card > span > h4:first-child .fa-star {
+  font-size: small;
+  padding: 0 10px 3px 0;
+}
+
+/* footer CSS */
+.footer {
+  margin: 10px;
+  width: auto;
+  text-align: center;
+  background-color: rgb(1, 163, 144);
+  padding: 20px 10px 20px;
+  border-radius: 5px;
+  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+}
+
+.footer > i {
+  padding: 0 5px 0;
+  font-size: smaller;
+}
+
+.fa-heart {
+  color: darkred;
+}
+
+.footer > strong {
+  padding-left: 5px;
+}
+
+.footer > strong > span {
+  color: rgb(203, 54, 0);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+}
+
+.search-container input {
+  min-width: 250px;
+  padding: 10px;
+}
+
+.search-container input:focus {
+  outline: 0;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0 40px;
+}
+
+.res-card {
+  width: 200px;
+  /* height: 300px; */
+  padding: 5px;
+  /* padding-bottom: 20px; */
+  border: 1px solid transparent;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+
+ 
+}
+.filter-btn{
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+.res-logo {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  object-fit: fit;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.footer {
+  padding: 20px 10px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cards-container {
+  margin: 5px;
+}
+.res-card .card-media img {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  object-fit: fit;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  background-color: #d0c8c8;
+  margin: 20px;
+  border-radius: 11px;
+}
+
+.login{
+  padding: 0 20px;
+  cursor: pointer;
+}
+.res-card-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.shimmer-menu,
+.shimmer-menu-main {
+  background-color: #efefef;
+}
+
+/*Animation to Shimmer Component Card and Menu card Start*/
+.stroke {
+  /* height: 15px; */
+  background: #777;
+}
+
+.stroke-color {
+  background: #777;
+}
+
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+/*Animation to Shimmer Component Card and Menu card End*/
+
+.loginBtn {
+  background-color: orange;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: #f6bb4d;
+}
+
+.filter {
+  display: flex;
+  gap: 20px;
+  margin: 30px 20px;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  width: 40%;
+}
+
+.search input {
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #aabcca;
+  border-right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  padding: 14px 15px 14px 20px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.search button,
+.filter-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  margin-left: -4px;
+  padding: 15px 22px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.filter-btn {
+  border-radius: 5px;
+}
+
+.search button:hover,
+.filter-btn:hover {
+  background-color: #09a909;
+}
+
+/* * Menu page */
+.menu-header {
+  height: 30vh;
+  background-color: #000;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-header .menu-header-left img {
+  width: 250px;
+  height: 170px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-header .menu-header-right .top h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.menu-header .menu-header-right .top h3 {
+  font-weight: normal;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.menu-header .menu-header-right .bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-header .menu-header-right .bottom h4 {
+  border-right: 4px solid #ccc;
+  padding-right: 20px;
+}
+
+.menu-main {
+  /* margin-top: 100px; */
+  margin: 80px 150px;
+}
+
+.menu-main h2 {
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.menu-main .items {
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.menu-main-card-container {
+  margin-top: 50px;
+  border-radius: 7px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #3b3a3a;
+}
+
+.menu-card-left .menu-name {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.menu-card-left .menu-price {
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.menu-card-left .menu-description {
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+.menu-card-right img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
